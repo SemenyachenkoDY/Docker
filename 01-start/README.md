@@ -27,13 +27,17 @@
 
 Запуск контейнера adminer
 
-<img width="1060" height="197" alt="image" src="https://github.com/user-attachments/assets/306ecf22-45ca-4ecb-90cd-1e2f4e9cb716" />
+<img width="1617" height="668" alt="image" src="https://github.com/user-attachments/assets/62d8877d-370a-4162-84e0-070e938e426a" />
 
 Проверка adminer на localhost:8080
+<img width="1850" height="984" alt="image" src="https://github.com/user-attachments/assets/53b8af9f-f64a-4c05-ac03-f93adbdc7006" />
 
 Авторизация в adminer
+<img width="1850" height="984" alt="image" src="https://github.com/user-attachments/assets/3c399a37-d2f2-4e52-af48-217b557a2117" />
 
 Остановка контейнера, проверка
+<img width="1624" height="669" alt="image" src="https://github.com/user-attachments/assets/ddd63d32-5d51-41ae-9f21-a82c9e897d37" />
+
 
 ## Вывод
 В ходе выполнения лабораторной работы был изучен функционал Docker, а конкретно: запуск и остановка контейнеров, просмотр образов и запущенных контейнеров.
