@@ -22,25 +22,18 @@
 <img width="1053" height="523" alt="image" src="https://github.com/user-attachments/assets/0763bd6b-4592-4f1a-920b-ad6e0b4ac5d7" />
 
 ## Индивидуальное задание
-### Вариант 5
-#### Кэширование/NoSQL. Запустить контейнер, подключиться через redis-cli и создать несколько ключей (например, user:1, user:2) для имитации кэша сессий пользователей.
+### Вариант 14
+#### **Управление БД.** Легковесный интерфейс для баз данных. Запустить контейнер, открыть в браузере (порт 8080) и попробовать интерфейс подключения (форма логина).
 
-Запуск контейнера Redis
+Запуск контейнера adminer
 
 <img width="1060" height="197" alt="image" src="https://github.com/user-attachments/assets/306ecf22-45ca-4ecb-90cd-1e2f4e9cb716" />
 
-Запуск CLI Redis, создание ключей
+Проверка adminer на localhost:8080
 
-<img width="688" height="398" alt="image" src="https://github.com/user-attachments/assets/973a8288-8d6b-4bd6-a6a1-443e43642e64" />
-
-Создание временного ключа (на 60 секунд) и выход из CLI
-
-<img width="674" height="71" alt="image" src="https://github.com/user-attachments/assets/2ef2cc8d-729d-487f-802c-57c07cab8adb" />
-<img width="337" height="179" alt="image" src="https://github.com/user-attachments/assets/570c3a9a-2564-4fb3-8121-d3af587a9a53" />
+Авторизация в adminer
 
 Остановка контейнера, проверка
 
-<img width="1051" height="185" alt="image" src="https://github.com/user-attachments/assets/df9afa39-60cd-429c-af0d-8e34fde06a3f" />
-
 ## Вывод
-В ходе выполнения лабораторной работы был изучен функционал Docker, а конкретно: запуск и остановка контейнеров, просмотр образов и запущенных контейнеров. Также была проведена работа в Redis: создание ключей сессии, обновление данных в сессии, установка времени жизни для ключа
+В ходе выполнения лабораторной работы был изучен функционал Docker, а конкретно: запуск и остановка контейнеров, просмотр образов и запущенных контейнеров.
