@@ -5,4 +5,4 @@
 
 [Развертывание приложения в Kubernetes](03-kubernetes/README.md)
 
-[Частные облачные системы](04-private cloud translation/README.md)
+[Частные облачные системы](04-private_cloud_translation/README.md)
