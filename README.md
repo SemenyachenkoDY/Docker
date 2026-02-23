@@ -3,6 +3,6 @@
 
 [Создание Dockerfile и сборка образа](02-dockerfile/README.md)
 
-[Развертывание приложения в Kubernetes]()
+[Развертывание приложения в Kubernetes](03-kubernetes/README.md)
 
-[Частные облачные системы]()
+[Частные облачные системы](04-private cloud translation/README.md)
