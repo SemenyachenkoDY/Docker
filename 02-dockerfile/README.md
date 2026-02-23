@@ -101,7 +101,7 @@ public class App {
 }
 ```
 
-[Файл requirements.txt](/pom.xml)
+[Файл зависимостей](/02-dockerfile/pom.xml)
 
 **Этап 2. Создание Dockerfile**
 ```Dockerfile
