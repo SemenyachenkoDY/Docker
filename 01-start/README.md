@@ -41,3 +41,50 @@
 
 ## Вывод
 В ходе выполнения лабораторной работы был изучен функционал Docker, а конкретно: запуск и остановка контейнеров, просмотр образов и запущенных контейнеров.
+
+
+
+#!/bin/bash
+set -e
+
+# Создаем сеть, если она не существует
+NETWORK_NAME="pg_network"
+docker network inspect $NETWORK_NAME >/dev/null 2>&1 || \
+docker network create $NETWORK_NAME
+
+# Запускаем контейнер PostgreSQL 16
+POSTGRES_CONTAINER="postgres16"
+docker rm -f $POSTGRES_CONTAINER >/dev/null 2>&1 || true
+docker run -d \
+  --name $POSTGRES_CONTAINER \
+  --network $NETWORK_NAME \
+  -e POSTGRES_USER=admin \
+  -e POSTGRES_PASSWORD=admin123 \
+  -e POSTGRES_DB=mydb \
+  -p 5432:5432 \
+  postgres:16
+
+# Запускаем Adminer
+ADMINER_CONTAINER="adminer"
+docker rm -f $ADMINER_CONTAINER >/dev/null 2>&1 || true
+docker run -d \
+  --name $ADMINER_CONTAINER \
+  --network $NETWORK_NAME \
+  -p 8080:8080 \
+  adminer
+
+# Запускаем pgAdmin 4
+PGADMIN_CONTAINER="pgadmin4"
+docker rm -f $PGADMIN_CONTAINER >/dev/null 2>&1 || true
+docker run -d \
+  --name $PGADMIN_CONTAINER \
+  --network $NETWORK_NAME \
+  -e PGADMIN_DEFAULT_EMAIL=admin@example.com \
+  -e PGADMIN_DEFAULT_PASSWORD=admin123 \
+  -p 5050:80 \
+  dpage/pgadmin4
+
+echo "Все контейнеры запущены:"
+echo "- PostgreSQL 16: localhost:5432"
+echo "- Adminer: http://localhost:8080"
+echo "- pgAdmin 4: http://localhost:5050"
