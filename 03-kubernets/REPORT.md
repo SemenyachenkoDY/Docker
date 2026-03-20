@@ -1,8 +1,8 @@
 # Отчет по лабораторной работе №3
-## Оркестрация контейнеров с помощью Kubernetes
+## Развертывание приложения в Kubernetes
 
-**Студент:** [ФИО]  
-**Группа:** [Группа]  
+**Студент:** Семеняченко Данил
+**Группа:** АДЭУ-221 
 **Вариант:** 14  
 **Задача:** Развернуть связку Wordpress + MariaDB + Adminer (GUI для БД) в кластере Kubernetes.
 
@@ -99,17 +99,20 @@ spec:
 - `targetPort`: Порт внутри контейнера, на который перенаправляется трафик.
 
 #### 2.3. Проверка взаимодействия
-![Статус ресурсов](img/status.png)
+![Проверка команды kubectl get pods](img/Снимок%20экрана%202026-03-20%20140856.png)
+
+![Проверка команды kubectl get services.](img/Снимок%20экрана%202026-03-20%20140926.png)
 
 ---
 
 ### 3. Результаты
 
 **Интерфейс WordPress (localhost:30080):**
-![WordPress UI](img/wordpress.png)
+<img width="1919" height="963" alt="image" src="https://github.com/user-attachments/assets/f90fbab8-b733-4412-94e3-20a3d50d9941" />
+
 
 **Интерфейс Adminer (localhost:30081):**
-![Adminer UI](img/adminer.png)
+<img width="1919" height="967" alt="image" src="https://github.com/user-attachments/assets/abc28c8c-e50d-4e0c-915c-4f0737731067" />
 
 ---
 
