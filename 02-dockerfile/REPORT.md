@@ -1,8 +1,8 @@
 # Отчет по лабораторной работе №2.1
 ## Разработка воспроизводимых аналитических инструментов
 
-**Студент:** [ФИО]  
-**Группа:** [Группа]  
+**Студент:** Семеняченко Данил
+**Группа:** АДЭУ-221
 **Вариант:** 14  
 **Тема данных:** Website Traffic (Трафик веб-сайта)  
 
@@ -145,12 +145,14 @@ CMD ["java", "-jar", "app.jar"]
 python generate_data.py
 # Generated 100 records in data/traffic_data.csv
 ```
+<img width="1254" height="177" alt="Снимок экрана 2026-03-20 132442" src="https://github.com/user-attachments/assets/af159459-a386-4ed5-993b-88e917c4fe89" />
 
 #### 4.2. Запуск через Docker Compose
 
 ```bash
 docker compose up --build
 ```
+<img width="1245" height="819" alt="Снимок экрана 2026-03-20 132532" src="https://github.com/user-attachments/assets/f350ecda-991e-487b-b208-085f9242bc97" />
 
 **Вывод терминала:**
 
@@ -158,28 +160,7 @@ docker compose up --build
 website-analytics-cont  | Average Session Duration: 478.53 seconds
 website-analytics-cont  | Standard Deviation: 402.86 seconds
 ```
-
----
-
-### 5. Инструкция по запуску
-
-#### 5.1. Запуск через Docker Compose (рекомендуется)
-```bash
-docker compose up --build
-```
-
-#### 5.2. Ручной запуск через Docker CLI
-```bash
-# Сборка образа
-docker build -t lab2-app ./app
-
-# Запуск с монтированием тома и прокидыванием .env
-docker run --rm -v ${PWD}/data:/data:ro --env-file .env lab2-app
-```
-
-#### 5.3. Локальный запуск (без Docker)
-1. Сборка Java: `cd app && mvn package`
-2. Запуск: `java -D"DATA_PATH=../data/traffic_data.csv" -jar target/website-analytics-1.0-SNAPSHOT.jar`
+<img width="1246" height="814" alt="Снимок экрана 2026-03-20 132543" src="https://github.com/user-attachments/assets/2cb144d9-c769-40c6-bdfd-6f2196aa182a" />
 
 ---
 
