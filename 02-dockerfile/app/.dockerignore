@@ -1,0 +1,6 @@
+target/
+*.class
+.git/
+.env
+.idea/
+*.iml

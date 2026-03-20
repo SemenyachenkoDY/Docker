@@ -1,0 +1,12 @@
+services:
+  analytics-app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    image: lab2-variant14:v2
+    container_name: website-analytics-cont
+    volumes:
+      - ./data:/data:ro
+    env_file:
+      - .env
+    restart: "no"
