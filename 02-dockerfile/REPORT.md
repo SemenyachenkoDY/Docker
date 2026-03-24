@@ -82,7 +82,7 @@ public class App {
     }
 }
 ```
-
+<img width="1254" height="177" alt="Снимок экрана 2026-03-20 132442" src="https://github.com/user-attachments/assets/af159459-a386-4ed5-993b-88e917c4fe89" />
 #### 3.3. Dockerfile (`app/Dockerfile`)
 
 Оптимизированный многоэтапный образ.
@@ -128,7 +128,6 @@ USER appuser
 CMD ["java", "-jar", "app.jar"]
 
 ```
-<img width="1254" height="177" alt="Снимок экрана 2026-03-20 132442" src="https://github.com/user-attachments/assets/af159459-a386-4ed5-993b-88e917c4fe89" />
 
 #### 4.2. Запуск через Docker Compose
 
