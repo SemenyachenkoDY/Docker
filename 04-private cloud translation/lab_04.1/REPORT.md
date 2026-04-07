@@ -402,6 +402,8 @@ kubectl exec -it postgres-deploy-544b68989-l5g9h -- psql -U user -d courses_db
 ```
 http://localhost:30090
 ```
+<img width="1916" height="961" alt="image" src="https://github.com/user-attachments/assets/5d2603ba-63d8-4609-933d-bf8b3246f01d" />
+
 ---
 
 ## 7. Выводы
